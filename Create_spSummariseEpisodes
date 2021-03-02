@@ -15,8 +15,5 @@ AS BEGIN
   ON ee.EnemyId=e.EnemyId
   GROUP BY e.EnemyId , e.EnemyName
   ORDER BY Enemy_count DESC 
-
 END;
 
-  SELECT *
-  FROM tblEpisodeCompanion c
