@@ -1,4 +1,4 @@
-CREATE FUNCTION fnEnimes (
+CREATE FUNCTION fnEnemies (
     @EpisodeId INT
 )
 RETURNS VARCHAR(50) AS
