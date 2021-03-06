@@ -25,8 +25,8 @@ CREATE TABLE [tblDoctor]
  [DoctorNumber]     int NOT NULL ,
  [DoctorName]       varchar(50) NOT NULL ,
  [BirthDate]        date NOT NULL ,
- [FirstEpisodeDate] date NOT NULL ,
- [LastEpisodeDate]  date NOT NULL ,
+ [FirstEpisodeDate] date ,
+ [LastEpisodeDate]  date ,
 
 
  CONSTRAINT [PK_tbldoctor] PRIMARY KEY CLUSTERED ([DoctorId] ASC)
@@ -53,8 +53,8 @@ CREATE TABLE [tblEpisode]
  [Title]         varchar(50) NOT NULL ,
  [EpisodeDate]   date NOT NULL ,
  [Notes]         text NOT NULL ,
- [AuthorId]      int NOT NULL ,
- [DoctorId]      int NOT NULL ,
+ [AuthorId]      int ,
+ [DoctorId]      int ,
 
 
  CONSTRAINT [PK_tblepisode] PRIMARY KEY CLUSTERED ([EpisodeId] ASC),
