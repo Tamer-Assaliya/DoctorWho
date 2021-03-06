@@ -1,6 +1,6 @@
 CREATE TABLE [tblAuthor]
 (
- [AuthorId]   int NOT NULL ,
+ [AuthorId]   int NOT NULL IDENTITY,
  [AuthorName] varchar(50) NOT NULL ,
 
 
@@ -10,7 +10,7 @@ GO
 
 CREATE TABLE [tblCompanion]
 (
- [CompanionId]   int NOT NULL ,
+ [CompanionId]   int NOT NULL IDENTITY,
  [CompanionName] varchar(50) NOT NULL ,
  [WhoPlayed]     varchar(50) NOT NULL ,
 
@@ -21,7 +21,7 @@ GO
 
 CREATE TABLE [tblDoctor]
 (
- [DoctorId]         int NOT NULL ,
+ [DoctorId]         int NOT NULL IDENTITY,
  [DoctorNumber]     int NOT NULL ,
  [DoctorName]       varchar(50) NOT NULL ,
  [BirthDate]        date NOT NULL ,
@@ -35,7 +35,7 @@ GO
 
 CREATE TABLE [tblEnemy]
 (
- [EnemyId]     int NOT NULL ,
+ [EnemyId]     int NOT NULL IDENTITY,
  [EnemyName]   varchar(50) NOT NULL ,
  [Description] text NOT NULL ,
 
@@ -46,7 +46,7 @@ GO
 
 CREATE TABLE [tblEpisode]
 (
- [EpisodeId]     int NOT NULL ,
+ [EpisodeId]     int NOT NULL IDENTITY,
  [SeriesNumber]  int NOT NULL ,
  [EpisodeNumber] int NOT NULL ,
  [EpisodeType]   varchar(50) NOT NULL ,
@@ -80,7 +80,7 @@ GO
 
 CREATE TABLE [tblEpisodeCompanion]
 (
- [EpisodeCompanionId] int NOT NULL ,
+ [EpisodeCompanionId] int NOT NULL IDENTITY,
  [EpisodeId]          int NOT NULL ,
  [CompanionId]        int NOT NULL ,
 
@@ -108,7 +108,7 @@ GO
 
 CREATE TABLE [tblEpisodeEnemy]
 (
- [EpisodeEnemyId] int NOT NULL ,
+ [EpisodeEnemyId] int NOT NULL IDENTITY,
  [EnemyId]        int NOT NULL ,
  [EpisodeId]      int NOT NULL ,
 
