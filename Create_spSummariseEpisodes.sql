@@ -1,6 +1,5 @@
-DROP PROCEDURE IF EXISTS spSummariseEpisodes;
 GO
-CREATE PROCEDURE spSummariseEpisodes
+CREATE OR ALTER PROCEDURE spSummariseEpisodes
 AS BEGIN
   SELECT TOP(3) c.CompanionName, COUNT(*) Companion_count
   FROM tblEpisodeCompanion ec
